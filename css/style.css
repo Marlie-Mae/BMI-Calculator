@@ -18,7 +18,7 @@ body {
     /*height: 520px;
     width: 750px;n */
     height: 460px;
-    width: auto;
+    width: 750;
     float: right;
     margin: -30px 40px 0 0;
 }
@@ -32,7 +32,7 @@ body {
     border: solid 1px #e3522d;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     float: left;
-    margin: 0 0 0 50px;
+    margin: 0 50px 0 50px;
     margin-bottom: 30px;
 }
 .row-one {
@@ -152,7 +152,7 @@ h3 {
     font-weight: 300;
     text-align: center;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 h3 b {
     font-size: 32px;
@@ -213,15 +213,6 @@ h3 b {
         justify-content: space-between; /* Make sure content is spaced evenly */
         height: 100%; /* Ensure the form takes the full height of its container */
     }
-
-    h1 {
-        font-size: 24px;
-        font-weight: 300;
-        text-align: center;
-        color: #e3522d;
-        padding-top: 15px;
-        margin-top: auto; /* Push h1 to the bottom */
-    }
 }
 
 @media (max-width: 768px) {
@@ -240,11 +231,6 @@ h3 b {
         flex-direction: column;
         justify-content: space-between; /* Ensure content is spaced evenly */
         height: 100%; /* Ensure form takes the full available height */
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-top: auto; /* Push h1 to the bottom */
     }
 }
 
@@ -270,11 +256,6 @@ h3 b {
         flex-direction: column;
         justify-content: space-between; /* Ensure content is spaced evenly */
         height: 100%; /* Ensure form takes the full available height */
-    }
-
-    h1 {
-        font-size: 18px; /* Adjust heading for small screens */
-        margin-top: auto; /* Push h1 to the bottom */
     }
 
     .text-input,
