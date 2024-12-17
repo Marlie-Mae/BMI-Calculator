@@ -1,5 +1,5 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: #333;
     margin: 0;
@@ -31,6 +31,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     float: left;
     margin: 0 0 0 50px;
+    margin-bottom: 30px;
 }
 .row-one {
     padding: 20px;
@@ -69,6 +70,12 @@ body {
 }
 .text-input1:hover {
     background-color: #eea390;;
+}
+/* Input with valid content (not empty) */
+.text-input:valid, .text-input1:valid {
+    background-color: #eea390; /* Light green background when there's input */
+    color: #fff;
+    font-weight: bold;
 }
 #submit {
     border: none;
@@ -182,4 +189,3 @@ h3 b {
         height: 350px; /* Reduce image height for mobile */
     }
 }
-
