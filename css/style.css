@@ -37,9 +37,11 @@ body {
 }
 .row-one {
     padding: 20px;
+    text-align: center;
 }
 .row-two {
     padding: 20px;
+    text-align: center;
 }
 .text-input{
     width: 60px;
