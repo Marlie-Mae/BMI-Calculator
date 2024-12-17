@@ -15,8 +15,10 @@ body {
     overflow: hidden;
 }
 .side-pic img{
-    height: 520px;
-    width: 750px;
+    /*height: 520px;
+    width: 750px;n */
+    height: 460px;
+    width: auto;
     float: right;
     margin: -30px 40px 0 0;
 }
@@ -180,15 +182,16 @@ h3 b {
 }
 
 /* Responsive Design */
-@media (max-width: 500px) {
+/* Responsive Design */
+@media (max-width: 1200px) {
     body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        overflow-x: auto; /* Hide horizontal overflow */
+        overflow-y: auto; /* Allow scrolling */
+        height: auto; /* Allow height to adjust as per content */
+        margin-bottom: 20px;
     }
 
     .side-pic img {
@@ -197,12 +200,27 @@ h3 b {
         margin: 10px auto;
         display: block;
         float: none; /* Remove float */
+        margin-top: 20px;
     }
 
     .form {
-        width: 60%;
+        width: 90%;
         margin: 20px auto;
         float: none; /* Remove float */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Make sure content is spaced evenly */
+        height: 100%; /* Ensure the form takes the full height of its container */
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        color: #e3522d;
+        padding-top: 15px;
+        margin-top: auto; /* Push h1 to the bottom */
     }
 }
 
@@ -211,29 +229,52 @@ h3 b {
         height: auto;
         max-width: 100%; /* Restrict to screen width */
         margin: 10px auto;
+        margin-top: 20px;
     }
 
     .form {
         width: 80%;
         margin: 10px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced evenly */
+        height: 100%; /* Ensure form takes the full available height */
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-top: auto; /* Push h1 to the bottom */
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        height: auto; /* Ensure body height adjusts */
+        padding: 10px;
+        overflow-y: auto; /* Allow scrolling */
+    }
+
     .side-pic img {
         height: auto;
         max-width: 100%;
         margin: 10px auto;
+        margin-top: 20px;
     }
 
     .form {
         width: 90%;
         margin: 10px auto;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced evenly */
+        height: 100%; /* Ensure form takes the full available height */
     }
 
-    h1, h2, h3 {
-        font-size: 18px; /* Adjust headings for small screens */
+    h1 {
+        font-size: 18px; /* Adjust heading for small screens */
+        margin-top: auto; /* Push h1 to the bottom */
     }
 
     .text-input,
@@ -242,5 +283,3 @@ h3 b {
         margin-bottom: 20px;
     }
 }
-
-
