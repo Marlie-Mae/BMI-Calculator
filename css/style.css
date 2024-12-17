@@ -178,3 +178,69 @@ h3 b {
     float: right;
     margin: 0 13px 0 0;
 }
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        overflow-x: auto; /* Hide horizontal overflow */
+    }
+
+    .side-pic img {
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure it fits within the screen */
+        margin: 10px auto;
+        display: block;
+        float: none; /* Remove float */
+    }
+
+    .form {
+        width: 60%;
+        margin: 20px auto;
+        float: none; /* Remove float */
+    }
+}
+
+@media (max-width: 768px) {
+    .side-pic img {
+        height: auto;
+        max-width: 100%; /* Restrict to screen width */
+        margin: 10px auto;
+    }
+
+    .form {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-pic img {
+        height: auto;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .form {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px; /* Adjust headings for small screens */
+    }
+
+    .text-input,
+    .text-input1 {
+        width: 100%; /* Make inputs full width */
+        margin-bottom: 20px;
+    }
+}
+
+
