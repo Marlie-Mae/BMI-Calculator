@@ -15,10 +15,12 @@ body {
     overflow: hidden;
 }
 .side-pic img{
-    /*height: 520px;
-    width: 750px;n */
+    height: 520px;
+    width: 750px;
+    /*
     height: 460px;
     width: 750;
+    */
     float: right;
     margin: -30px 40px 0 0;
 }
