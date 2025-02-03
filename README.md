@@ -1,4 +1,4 @@
-# 📌 BMI Project - Completed  
+# 📌 BMI Calculator Project - Completed  
 
 The **BMI (Body Mass Index)** project has been completed as of **February 3, 2025**. It provides a simple and effective way to calculate and display BMI values based on user input. The project is deployed on **GitHub Pages** for easy access and usage.  
 
