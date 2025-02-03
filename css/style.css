@@ -67,10 +67,10 @@ body {
     cursor: pointer;
 }
 .text-input:last-child {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 .text-input1{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .text-input:hover {
     background-color: #e3522d;
@@ -109,7 +109,7 @@ body {
     font-weight: bold;
 }
 .row-one {
-    padding: 20px 15px 15px 10px;
+    padding: 20px 15px 10px 10px;
 }
 .row-two {
     padding: 15px 10px 0px 10px;
