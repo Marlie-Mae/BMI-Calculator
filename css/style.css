@@ -1,108 +1,272 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+* {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
-
-h1 {
-    text-align: center;
-    margin: 20px;
+body {
+    margin: 0;
+    height: 90vh;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right, #feebcb, #feebcb);
+    overflow: hidden;
 }
-
-.cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 900px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.side-pic img{
+    height: 520px;
+    width: 750px;
+    /*
+    height: 460px;
+    width: 750;
+    */
+    float: right;
+    margin: -30px 40px 0 0;
 }
-
 .form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 300px;
-    padding: 10px;
-}
-
-.row-one, .row-two {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2px;
-}
-
-.text {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.text-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.text-input1 {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #28a745;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-.side-pic {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-}
-
-.side-pic img {
-    max-width: 100%;
+    background-color: #ffffff;
     height: auto;
+    width: 450px;
     border-radius: 10px;
+    margin: 20px auto 20px auto;
+    display: block;
+    border: solid 1px #e3522d;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin: 0 45px 0 55px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+.row-one {
+    padding: 20px;
+    text-align: center;
+}
+.row-two {
+    padding: 20px;
+    text-align: center;
+}
+.text-input{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #fcd1b8;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.text-input1 {
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #fcd1b8;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.text-input:last-child {
+    margin-bottom: 35px;
+}
+.text-input1{
+    margin-bottom: 35px;
+}
+.text-input:hover {
+    background-color: #e3522d;
+}
+.text-input1:hover {
+    background-color: #e3522d;;
+}
+/* Input with valid content (not empty) */
+.text-input:valid, .text-input1:valid {
+    background-color: #e3522d; /* Light green background when there's input */
+    color: #fff;
+    font-weight: bold;
+}
+#submit {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    background-color: #e3522d;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #e3522d;
+    filter: brightness(120%)
+    /*transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); */
+}
+.text {
+    display: inline-block;
+    margin: 5px 20px 5px 8px;
+    font-weight: bold;
+}
+.row-one {
+    padding: 20px 15px 15px 10px;
+}
+.row-two {
+    padding: 15px 10px 0px 10px;
+}
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fcd1b8;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+    background-color: #f08e76;
+}
+.container input:checked ~ .checkmark {
+    background-color: #e3522d;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #e3522d;
+    padding-top: 15px;
+    display: block;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+h3 b {
+    font-size: 32px;
+    font-weight: 300;
+    color: #e3522d;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.fa{
+    float: right;
+    margin: 0 13px 0 0;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto; /* Allow scrolling */
+        height: auto; /* Allow height to adjust as per content */
+        margin-bottom: 20px;
+    }
+
+    .side-pic img {
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure it fits within the screen */
+        margin: 10px auto;
+        display: block;
+        float: none; /* Remove float */
+        margin-top: 20px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 20px auto;
+        float: none; /* Remove float */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Make sure content is spaced evenly */
+        height: 100%; /* Ensure the form takes the full height of its container */
+    }
 }
 
 @media (max-width: 768px) {
-    .cont {
-        flex-direction: column;
-        align-items: center;
+    .side-pic img {
+        height: auto;
+        max-width: 100%; /* Restrict to screen width */
+        margin: 10px auto;
+        margin-top: 20px;
     }
-    .text-input {
-        width: 100%;
+
+    .form {
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced evenly */
+        height: 100%; /* Ensure form takes the full available height */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto; /* Ensure body height adjusts */
+        padding: 10px;
+        overflow-y: auto; /* Allow scrolling */
+    }
+
+    .side-pic img {
+        height: auto;
+        max-width: 100%;
+        margin: 10px auto;
+        margin-top: 20px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced evenly */
+        height: 100%; /* Ensure form takes the full available height */
+    }
+
+    .text-input,
+    .text-input1 {
+        width: 100%; /* Make inputs full width */
+        margin-bottom: 20px;
     }
 }
